@@ -24,4 +24,4 @@ if start == 1:
     else:
         print('Access Denied')
 else:
-    print('Access Denied')
+        print('Invalid User Input')
