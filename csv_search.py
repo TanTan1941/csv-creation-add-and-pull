@@ -5,8 +5,8 @@ print('still running')
 def search_user():
     first_name = input('First Name: ')
     last_name = input('Last Name: ')
-    with open('names.csv', 'r') as file:
-        data = csv.reader(file)
+    with open('names.csv', 'r') as csvfile:
+        data = csv.reader(csvfile)
         for row in data:
             if len(row) >= 2:  # Check if row has at least two columns
                 if first_name == row[0] and last_name == row[1]:
